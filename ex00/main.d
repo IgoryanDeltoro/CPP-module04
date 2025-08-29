@@ -1,1 +1,1 @@
-main.o: main.cpp Animal.hpp Cat.hpp Dog.hpp
+main.o: main.cpp Cat.hpp Animal.hpp Dog.hpp WrongCat.hpp WrongAnimal.hpp

@@ -6,7 +6,10 @@ RM 			:= rm -rf
 SRC 		:=	main.cpp \
 				Animal.cpp \
 				Dog.cpp \
-				Cat.cpp 
+				Cat.cpp \
+				WrongCat.cpp \
+				WrongAnimal.cpp \
+				
 OBJ 		:= $(SRC:%.cpp=%.o)
 DEPS		:= $(OBJ:%.o=%.d)
 all: 		$(TARGET)
