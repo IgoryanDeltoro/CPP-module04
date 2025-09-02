@@ -1,11 +1,12 @@
 #ifndef BRAIN_HPP
 # define BRAIN_HPP
+# define ARR_SIZE 100
 
 # include <iostream>
 
 class Brain {
     private:
-        std::string _ideas[100];
+        std::string _ideas[ARR_SIZE];
 
     public:
         Brain();
@@ -13,8 +14,8 @@ class Brain {
         Brain& operator=(const Brain &other);
         ~Brain();
 
-        std::string* getBrainIdeas();
-        void setBrainIdeas(const std::string &idea);
+        std::string getBrainIdea(int idx);
+        void setBrainIdea(const std::string &idea, int idx);
 };
 
 #endif

@@ -1,20 +1,20 @@
 #include "Dog.hpp"
 
 Dog::Dog() : Animal() {
-    std::cout << "The default constructor created a dog.\n";
+    std::cout << "Dog default constructor called.\n";
     this->_type = "Dog";
 }
 
 Dog::Dog(const Dog &other) : Animal(other) {
-    std::cout << "The copy constructor created the copy of dog.\n";
+    std::cout << "Dog copy constructor called.\n";
 }
 
 Dog::~Dog() {
-    std::cout << "The derived distructor killed a dog.\n ";
+    std::cout << "Dog derived destructor called.\n ";
 }
 
 Dog &Dog::operator=(const Dog &other) {
-    std::cout << "The assignment operator created the deep copy of dog.\n ";
+    std::cout << "Dog assignment operator called.\n ";
     if (this != &other)
         Animal::operator=(other);
     return *this;

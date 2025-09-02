@@ -1,19 +1,19 @@
 #include "Animal.hpp"
 
 Animal::Animal() : _type("Animal") {
-    std::cout << "The default constructor created an animal.\n";
+    std::cout << "Animal default constructor called.\n";
 }
 
 Animal::Animal(const Animal &other) : _type(other._type) {
-    std::cout << "The copy constructor created the copy of animal.\n";
+    std::cout << "Animal copy constructor called.\n";
 }
 
 Animal::~Animal() {
-    std::cout << "The base distructor killed an animal.\n ";
+    std::cout << "Animal destructor called.\n ";
 }
 
 Animal &Animal::operator=(const Animal &other) {
-    std::cout << "The assignment operator create the deep copy of animal.\n ";
+    std::cout << "Animal assignment operator called.\n ";
     if (this != &other)
         _type = other._type;
     return *this;

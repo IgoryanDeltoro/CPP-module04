@@ -1,21 +1,21 @@
 #include "Cat.hpp"
 
 Cat::Cat() : Animal() {
-    std::cout << "The default constructor created a cat.\n";
+    std::cout << "Cat default constructor called.\n";
     this->_type = "Cat";
 }
 
 Cat::Cat(const Cat &other) : Animal(other) {
-    std::cout << "The copy constructor created the copy of cat.\n";
+    std::cout << "Cat copy constructor called.\n";
     this->_type = other._type;
 }
 
 Cat::~Cat() {
-    std::cout << "The derived distructor killed a cat.\n ";
+    std::cout << "Cat destructor called.\n ";
 }
 
 Cat &Cat::operator=(const Cat &other) {
-    std::cout << "The assignment operator created the deep copy of cat.\n ";
+    std::cout << "Cat assignment operator called.\n ";
     if (this != &other)
         Animal::operator=(other);
     return *this;
