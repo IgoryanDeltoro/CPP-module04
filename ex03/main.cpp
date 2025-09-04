@@ -4,6 +4,8 @@
 
 int main () {
     Ice i;
+    std::cout << "&i : " << &i << std::endl;
+
     Cure c;
     AMateria *ptr1;
     AMateria *ptr2;
