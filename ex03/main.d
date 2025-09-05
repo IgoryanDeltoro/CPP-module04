@@ -1,1 +1,2 @@
-main.o: main.cpp Ice.hpp AMateria.hpp Cure.hpp
+main.o: main.cpp AMateria.hpp ICharacter.hpp Ice.hpp Cure.hpp \
+  Character.hpp

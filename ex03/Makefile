@@ -6,7 +6,8 @@ RM 			:= rm -rf
 SRC 		:=	main.cpp \
 				AMateria.cpp \
 				Ice.cpp \
-				Cure.cpp
+				Cure.cpp \
+				Character.cpp
 				 
 OBJ 		:= $(SRC:%.cpp=%.o)
 DEPS		:= $(OBJ:%.o=%.d)

@@ -1,1 +1,1 @@
-AMateria.o: AMateria.cpp AMateria.hpp
+AMateria.o: AMateria.cpp AMateria.hpp ICharacter.hpp

@@ -1,1 +1,1 @@
-Cure.o: Cure.cpp Cure.hpp AMateria.hpp
+Cure.o: Cure.cpp Cure.hpp AMateria.hpp ICharacter.hpp
