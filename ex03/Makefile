@@ -7,7 +7,8 @@ SRC 		:=	main.cpp \
 				AMateria.cpp \
 				Ice.cpp \
 				Cure.cpp \
-				Character.cpp
+				Character.cpp \
+				MateriaSource.cpp
 				 
 OBJ 		:= $(SRC:%.cpp=%.o)
 DEPS		:= $(OBJ:%.o=%.d)
