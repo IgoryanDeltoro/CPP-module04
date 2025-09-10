@@ -36,7 +36,6 @@ MateriaSource::~MateriaSource() {
     std::cout << "MateriaSource destructor called.\n";
     for (int i = 0; i < 4; i++) {
         delete this->_storage[i];
-        this->_storage[i] = NULL;
     }
 }
 

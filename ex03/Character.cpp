@@ -47,8 +47,10 @@ Character::~Character() {
     for (int i = 0; i < 4; i++) {
         if (this->_inventory[i]) {
             delete this->_inventory[i];
-            this->_inventory[i] = NULL;
         }
+    }
+    for (int i = 0; i < static_cast<int>(_floor.size()); i++) {
+        delete _floor[i];
     }
 }
 
@@ -67,8 +69,10 @@ void Character::equip(AMateria *m) {
 
 void Character::unequip(int idx) {
     if (idx >= 0 && idx < 4) {
-        if (this->_inventory[idx])
+        if (this->_inventory[idx]) {
+            this->_floor.push_back(this->_inventory[idx]);
             this->_inventory[idx] = NULL;
+        }
     }
 }
 
