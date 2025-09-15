@@ -1,6 +1,7 @@
 #ifndef CHARACTER_HPP
 # define CHARACTER_HPP
-# include "ICharacter.hpp"
+# define FLOORSIZE 100
+#include "ICharacter.hpp"
 # include <vector>
 
 class Character: public ICharacter {

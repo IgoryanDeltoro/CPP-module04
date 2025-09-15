@@ -1,6 +1,7 @@
 #include "Character.hpp"
 
-void defaultInitializer(AMateria **inventory) {
+void defaultInitializer(AMateria **inventory)
+{
     for (int i = 0; i < 4; i++) {
         inventory[i] = NULL;
     }
@@ -19,7 +20,7 @@ Character::Character(const std::string &name) : _name(name) {
 Character::Character(const Character &other) :_name(other._name) {
     std::cout << "Character copy constructor called.\n";
     for (int i = 0; i < 4; i++) {
-        if (other._inventory[i]) 
+        if (other._inventory[i])
             this->_inventory[i] = other._inventory[i]->clone();
         else    
             this->_inventory[i] = NULL;
@@ -50,7 +51,7 @@ Character::~Character() {
         }
     }
     for (int i = 0; i < static_cast<int>(_floor.size()); i++) {
-        delete _floor[i];
+        delete this->_floor[i];
     }
 }
 
@@ -82,3 +83,4 @@ void Character::use(int idx, ICharacter &target) {
             this->_inventory[idx]->use(target);
     }
 }
+
